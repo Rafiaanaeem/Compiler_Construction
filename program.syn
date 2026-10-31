@@ -1,0 +1,20 @@
+begin
+    # 1. Invalid identifier (starts with digit)
+    whole 2age = 20;
+    
+    # 2. Invalid identifier (starts with underscore)
+    whole _name = 10;
+    
+    # 3. Invalid character (unknown symbol)
+    whole marks = 85 @;
+    
+    # 4. Malformed numeric literals
+    decimal bad_num1 = 12.5abc;
+    decimal bad_num2 = .5;
+    
+    # 5. Unterminated string
+    text greeting = "Hello World
+    
+    # 6. Unterminated multi-line comment
+    /* This comment never ends
+finish
