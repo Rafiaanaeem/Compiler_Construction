@@ -4,4 +4,3 @@ begin
     
     # 2. Invalid identifier (starts with underscore)
     who$%#le123 _name=1---0\;
-    
