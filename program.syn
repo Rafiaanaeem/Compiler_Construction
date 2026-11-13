@@ -1,19 +1,36 @@
 begin
-    # 1. Invalid identifier (starts with digit)
-    whole 2age = 20;
-    
-    # 2. Invalid identifier (starts with underscore)
-    whole _name = 10;
-    
-    # 3. Invalid character (unknown symbol)
-    whole marks = 85 @;
-    # 4. Malformed numeric literals
-    decimal bad_num1 = 12.5abc;
-    decimal bad_num2 = .5;
-    
-    # 5. Unterminated string
-    text greeting = "Hello World
-    
-    # 6. Unterminated multi-line comment
-    /* This comment never ends
+
+make age = 18;
+whole marks = 85;
+decimal average = 87.5;
+text name = "Rafia";
+flag passed = true;
+
+show name;
+show age;
+show average;
+
+set age = 20;
+
+when passed do
+    show "Student passed";
+otherwise
+    show "Student failed";
+stop
+
+while age > 0 do
+    show age;
+    set age = age - 1;
+stop
+
+repeat 3 times
+    show "Hello";
+stop
+
+define whole add(whole a, whole b)
+    give a + b;
+stop
+
+show add(5, 10);
+
 finish
