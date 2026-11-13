@@ -289,9 +289,6 @@ class SynoraScanner:
             start_column
         )
 
-    # --------------------------------------------------------
-    # MALFORMED NUMBER HELPER
-    # --------------------------------------------------------
 
     def consume_bad_number_tail(self):
 
